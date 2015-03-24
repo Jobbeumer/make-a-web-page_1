@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Job's Notes</title>
+
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+
+ 	<meta charset="UTF-8">
+
+</head>
+
+<body>
+	<h1>Important Concepts</h1>
+	<div class="lesson">
+	<!-- LESSON 1 -->
+		<h2 id="lesson-1">Lesson 1: The Basics of the Web and HTML</h2>
+	<!-- LESSON 1 CONCEPT 1 -->
+		<div class="concept" id="lesson-1-1">
+				
+			<div class="concept-title">
+				HTML and the Web
+			</div>
+
+			<div class="concept-description">
+					
+				<p>
+					The web is a collection of HTML documents. You can access these pages through your browser, which will use a protocol called HTTP to show the HTML pages that we stored on a server.
+				</p>
+
+				<p>
+					HTML is the basis of almost all pages. HTML is the glue between all the data on a website. HTML, Hypertext Markup Language, is made up of four things.
+					
+				</p>
+				
+				<ul>
+					<li>Text content</li>
+						
+					<li>Markup. How a page looks</li>
+						
+					<li>References to other documents (video, images)</li>
+						
+					<li>Links to other pages</li>
+				</ul>	
+
+			</div>
+
+		</div>
+
+	<!-- LESSON 1 CONCEPT 2 -->		
+		<div class="concept" id="lesson-1-2">
+				
+			<div class="concept-title">
+				Elements and Tags
+			</div>
+
+			<div class="concept-description">
+					
+				<p>
+					All HTML is made up from HTML elements. Elements are made up from tags and content. A tag looks something like this <span class="code">&lt;br&gt;&lt;/br&gt;</span>. By using tags we can tell the browsers what to do with the specific elements and how to show them. Without tags we would only be able to show text in an HTML page.				
+				</p>
+
+			</div>
+
+		</div>
+
+	<!-- LESSON 1 CONCEPT 3 -->
+		<div class="concept" id="lesson-1-3">
+				
+			<div class="concept-title">
+				Computers are stupid
+			</div>
+
+			<div class="concept-description">
+					
+				<p>
+					Computers are very good at doing what we tell them. But they also do exactly what we tell them. So if we make a mistake in our code. The computer will not correct us and will try to run the code. This can cause unexpected outcomes or make our code not work at all. Luckily most programs you will write code with will also help you find errors while you are writing.
+				</p>
+
+			</div>
+
+		</div>
+
+	<!-- LESSON 1 CONCEPT 4 -->
+		<div class="concept" id="lesson-1-4">
+						
+			<div class="concept-title">
+				HTML Attributes
+			</div>
+
+			<div class="concept-description">
+							
+				<p>
+					We can add multiple attributes to tags. We use those attributes for a lot of different things. You can use it to make words into links or to include images in the HTML. Two you will be using a lot are:
+				</p>
+				<ul>
+					<li><span class="code">&lt;img&gt;</span> to add images</li>
+
+					<li><span class="code">&lt;a href&gt;</span> to insert links</li>
+				</ul>
+			</div>
+
+		</div>
+
+	<!-- LESSON 1 CONCEPT 5 -->
+		<div class="concept" id="lesson-1-5">
+				
+			<div class="concept-title">
+				Inline vs. Block
+			</div>
+
+			<div class="concept-description">
+					
+				<p>
+					Block tags create an invisible box around an element. Block tags can have height and width. An example of a block tags is the paragraph tag (<span class="code">&lt;p&gt;&lt;/p&gt;</span>).
+					Inline tags don't create a box around the element. An example of an inline tag is the break tag (<span class="code">&lt;br&gt;</span>).
+				</p>
+
+				<p>
+					A different example is the span tag which you write as: <span class="code">&lt;span&gt;&lt;/span&gt;</span>. Span is also an inline element. The div tag is another example of a block element. You write the div tag like: <span class="code">&lt;div&gt;&lt;/div&gt;</span>. You can use these to add CSS attributes to the element so you can change how the text looks.
+				</p>
+
+			</div>
+
+		</div>
+
+	</div> 
+
+	<!-- LESSON 2-->
+
+	<div class="lesson">
+		
+		<h2 id="lesson-2">Lesson 2: Creating a Structured Document with HTML</h2>
+
+	<!-- LESSON 2 CONCEPT 1 -->
+
+		<div class="concept" id="lesson-2-1">
+				
+			<div class="concept-title">
+				Seeing the web through a browser
+			</div>
+
+			<div class="concept-description">
+					
+				<p>
+					You can use developer tools in your browser to see how the browser interpets your code. It actually looks a bit different from how it was written. Using the developer tools you can see all the elements in the code. Even the ones you can not visibly see on the page it self.
+				</p>
+
+			</div>
+
+		</div>
+
+	<!-- LESSON 2 CONCEPT 2 -->
+
+		<div class="concept" id="lesson-2-2">
+				
+			<div class="concept-title">
+				The DOM(Document Object Model) tree of HTML
+			</div>
+
+			<div class="concept-description">
+					
+				<p>
+					When using the developer tools you can see how the browser sees HTML. Sideways triangles are HTML elements. They have a opening and a closing tag. When you open them you can see the content of that element. Which can be text or more elements. If you would draw out the relation ships between all these elements you would get an image that would look a bit like a family tree. 
+				</p>
+
+				<p>
+					The DOM will create elements from the written HTML tags. Because of the tags we use the DOM knows if the HTML written is an image, text or even white space. By using attributes in our tags we can use CSS to tell the browser how to show the elements. For example it can be used to make text a different colour or size.
+				</p>
+
+			</div>
+
+		</div>
+
+	<!-- LESSON 2 CONCEPT 3 -->
+		<div class="concept" id="lesson-2-3">
+				
+				<div class="concept-title">
+					Boxes, boxes and boxes
+				</div>
+
+				<div class="concept-description">
+					
+					<p>
+						Even though you can have all kind of shapes on website everything is made up of boxes. When you look at a webpage you can draw boxes around almost all the things you can see. These boxes represent elements in the DOM tree. The deeper a box is within other boxes, the more indented the element is in the DOM tree. Thinking in boxes makes it a lot easier to think of a structured way to make your website. If you already have a design you can boxify it and create your html document from there.
+					</p>
+
+				</div>
+
+			</div>
+
+	</div>
+
+	<!-- LESSON 3 -->
+	<div class="lesson">
+		
+		<h2 id="lesson-3">Adding CSS Style to HTML Structure</h2>
+
+	<!-- LESSON 3 CONCEPT 1 -->
+
+		<div class="concept" id="lesson-3-1">
+				
+			<div class="concept-title">
+				CSS
+			</div>
+
+			<div class="concept-description">
+					
+				<p>
+					Cascading Style Sheets make it possible to control how the browser shows your HTML elements. As seen in Lesson 2 you can add classes to your elements. As an example: CSS can either change the way how all div tags look or change only some by adding a class to the divs you want to change. 
+				</p>
+
+			</div>
+
+		</div>
+
+	<!-- LESSON 3 CONCEPT 2 -->
+
+		<div class="concept" id="lesson-3-2">
+				
+			<div class="concept-title">
+					Avoiding Repetition
+			</div>
+
+			<div class="concept-description">
+					
+				<p>
+					Using CSS for the styling of our HTML document will make our work a lot easier when webpages become big. By using style attributes we can change the way how many different parts of our page look by changing only one line in our css code. You can do this by giving multiple tags the same class and multiple classes to one tag.
+				</p>
+
+				<p>
+					By avoiding this repetition it is also a lot easier to spot mistakes you might have made. And if you made a mistake it is a lot quicker to fix something once than to fix it for tens or maybe even hundreds of times.
+				</p>
+
+			</div>
+
+		</div>
+
+	<!-- LESSON 3 CONCEPT 3 -->
+
+		<div class="concept" id="lesson-3-3">
+				
+			<div class="concept-title">
+				More Boxes	
+			</div>
+
+			<div class="concept-description">
+					
+				<p>
+					There is more to boxes than what we saw in Lesson 2. Boxes consist of content, padding, border and margin, from inside to outside. 
+				</p>
+
+				<p>
+					The size of the element consists of the size of the content, padding and the border. The padding and border are not automatically taken into account in the element size. Because this does make calculating the size of your elements a lot harder you can use the CSS code: box-sizing: border-box;. This will make the element size include the padding and border. 
+				</p>
+
+				<p>
+					You can use pixels or percentage for the size of boxes. Using pixels will always keep the box the same size. Using percentages the size of the boxes will change with the size of the screen. 
+				</p>
+
+				<p>
+					Using the style attribute display: flex; you can have boxes next to each other instead of underneath each other. 
+				</p>
+			
+			</div>
+
+		</div>
+
+	<!-- LESSON 3 CONCEPT 4 -->
+
+		<div class="concept" id="lesson-3-4">
+				
+			<div class="concept-title">
+				Code, Test, Refine	
+			</div>
+
+			<div class="concept-description">
+					
+				<p>
+					When trying to code a design that was given to you a great way of getting there is with these 5 steps:
+				</p>
+
+				<ol>
+					<li>Look for natural boxes</li>
+					<li>Look for repeated styles and semantic elements</li>
+					<li>Write your HTML</li>
+					<li>Apply Styles (from biggest to smallest</li>
+					<li>Fix things</li>
+				</ol>
+
+			</div>
+
+		</div>
+
+	</div> 
+
+</body>
+</html>
